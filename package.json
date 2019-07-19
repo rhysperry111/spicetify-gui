@@ -1,0 +1,19 @@
+{
+  "name": "spicetify-gui",
+  "version": "0.1.0",
+  "description": "A gui frontend for spicetify-cli",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "spotify",
+    "spicetify",
+    "electron"
+  ],
+  "author": "Rhys Perry",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "electron": "^5.0.7"
+  }
+}
