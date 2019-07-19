@@ -17,7 +17,7 @@ function createWindow() {
     resizable: false,
     webPreferences: {
       nodeIntegration: true,
-      zoomFactor: 0.5
+      zoomFactor: 0.75
     },
     frame: false,
     type: "splash"

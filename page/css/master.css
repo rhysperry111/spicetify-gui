@@ -26,3 +26,7 @@ h1 {
   background-color: #eee;
   color: #333;
 }
+
+p {
+  padding: 0.75em;
+}
