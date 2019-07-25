@@ -1,4 +1,17 @@
-var colorPicker = new ColorPicker.Default("#colorpicker", {
-  // Set the initial color to red
-  color: "#fff"
-});
+function downloadINI() {
+  var filename = "color.ini";
+  var text = `stylesheet
+  stylesheetts
+
+  stest`
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
