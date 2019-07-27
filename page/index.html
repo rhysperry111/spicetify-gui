@@ -1,86 +1,175 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+
 <head>
   <meta charset="utf-8">
   <title>Spicetify Configurator</title>
   <link rel="stylesheet" href="css/master.css">
 </head>
 
-<body onclick="updateVals()">
-  <h1>Spicetify Configurator</h1>
+
+<body>
+
+  <div id="header">
+    <h1>Spicetify Configurator</h1>
+  </div>
+
 
   <div id="main">
-    <div class="holder">
-      <p>Main Foreground</p>
-      <input type="color" value="#D0193E" class="selector" id="mainFG">
-    </div>
-    <div class="holder">
-      <p>Secondary Foreground</p>
-      <input type="color" value="#DEDEDE" class="selector" id="secondaryFG">
-    </div>
-    <div class="holder">
-      <p>Main Background</p>
-      <input type="color" value="#040035" class="selector" id="mainBG">
-    </div>
-    <div class="holder">
-      <p>Sidebar/Player Background</p>
-      <input type="color" value="#040035" class="selector" id="sidebarPlayerBG">
-    </div>
-    <div class="holder">
-      <p>Cover Overlay/Shadow</p>
-      <input type="color" value="#000000" class="selector" id="coverOverlayShadow">
-    </div>
-    <div class="holder">
-      <p>Indicator Foregound/Button Background</p>
-      <input type="color" value="#DA4C69" class="selector" id="indicatorFGButtonBG">
-    </div>
-    <div class="holder">
-      <p>Pressing Foreground</p>
-      <input type="color" value="#FF5C86" class="selector" id="pressingFG">
-    </div>
-    <div class="holder">
-      <p>Slider Background</p>
-      <input type="color" value="#3F3C45" class="selector" id="sliderBG">
-    </div>
-    <div class="holder">
-      <p>Sidebar Indicator/Hover Button Background</p>
-      <input type="color" value="#CB0029" class="selector" id="sidebarIndicatorHoverButtonBG">
-    </div>
-    <div class="holder">
-      <p>Scrollbar Foreground/Selected Row Background</p>
-      <input type="color" value="#370043" class="selector" id="scrollbarFGSelectedRowBG">
-    </div>
-    <div class="holder">
-      <p>Pressing Button Foreground</p>
-      <input type="color" value="#DEDEDE" class="selector" id="pressingButtonFG">
-    </div>
-    <div class="holder">
-      <p>Pressing Button Background</p>
-      <input type="color" value="#19194F" class="selector" id="pressingButtonBG">
-    </div>
-    <div class="holder">
-      <p>Selected Button</p>
-      <input type="color" value="#370043" class="selector" id="selectedButton">
-    </div>
-    <div class="holder">
-      <p>Miscellaneous Background</p>
-      <input type="color" value="#3F3C45" class="selector" id="miscBG">
-    </div>
-    <div class="holder">
-      <p>Miscellaneous Hover Background</p>
-      <input type="color" value="#1D1949" class="selector" id="miscHoverBG">
-    </div>
-    <div class="holder">
-      <p>Preserve 1</p>
-      <input type="color" value="#DEDEDE" class="selector" id="preserve1">
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Main Foreground</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#D0193E" class="selector" id="mainFG">
+      </div>
     </div>
 
-    <div class="button-holder">
-      <input type="button" value="Generate Theme" id="thebutton" onclick="downloadINI()">
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Secondary Foreground</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#DEDEDE" class="selector" id="secondaryFG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Main Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#040035" class="selector" id="mainBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Sidebar/Player Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#040035" class="selector" id="sidebarPlayerBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Cover Overlay/Shadow</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#000000" class="selector" id="coverOverlayShadow">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Indicator Foregound/Button Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#DA4C69" class="selector" id="indicatorFGButtonBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Pressing Foreground</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#FF5C86" class="selector" id="pressingFG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Slider Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#3F3C45" class="selector" id="sliderBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Sidebar Indicator/Hover Button Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#CB0029" class="selector" id="sidebarIndicatorHoverButtonBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Scrollbar Foreground/Selected Row Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#370043" class="selector" id="scrollbarFGSelectedRowBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Pressing Button Foreground</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#DEDEDE" class="selector" id="pressingButtonFG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Pressing Button Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#19194F" class="selector" id="pressingButtonBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Selected Button</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#370043" class="selector" id="selectedButton">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Miscellaneous Background</p>
+      </div>
+      <div class="selector-holder">
+        <input type="color" value="#3F3C45" class="selector" id="miscBG">
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="item-text">
+        <p>Miscellaneous Hover Background</p>
+      </div>
+      <input type="color" value="#1D1949" class="selector" id="miscHoverBG">
     </div>
   </div>
+
+  <div class="grid-item">
+    <div class="item-text">
+      <p>Preserve 1</p>
+    </div>
+    <div class="selector-holder">
+      <input type="color" value="#DEDEDE" class="selector" id="preserve1">
+    </div>
+  </div>
+
+
+  <div class="grid-item wider">
+    <input type="button" value="Generate Theme" id="thebutton" onclick="downloadINI()">
+  </div>
+
+  </div>
+
   <script src="js/master.js"></script>
+
 </body>
 
 </html>
