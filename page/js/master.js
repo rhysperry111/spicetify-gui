@@ -1,4 +1,5 @@
 // I am really really sorry for the long and descriptive variable names
+var iniFile;
 var mainFG, secondaryFG,
   mainBG, sidebarPlayerBG,
   coverOverlayShadow, indicatorFGButtonBG,
@@ -7,28 +8,6 @@ var mainFG, secondaryFG,
   pressingButtonFG, pressingButtonBG,
   selectedButton, miscBG,
   miscHoverBG, preserve1;
-
-// I am just using a color.ini from a theme I like
-var iniFil `
-[Base]
-; Shadow Style
-main_fg                               = ${mainFG}
-secondary_fg                          = ${secondaryFG}
-main_bg                               = ${mainBG}
-sidebar_and_player_bg                 = ${sidebarPlayerBG}
-cover_overlay_and_shadow              = ${coverOverlayShadow}
-indicator_fg_and_button_bg            = ${indicatorFGButtonBG}
-pressing_fg                           = ${pressingFG}
-slider_bg                             = ${sliderBG}
-sidebar_indicator_and_hover_button_bg = ${sidebarIndicatorHoverButtonBG}
-scrollbar_fg_and_selected_row_bg      = ${scrollbarFGSelectedRowBG}
-pressing_button_fg                    = ${pressingButtonFG}
-pressing_button_bg                    = ${pressingButtonBG}
-selected_button                       = ${selectedButton}
-miscellaneous_bg                      = ${miscBG}
-Miscellaneous_hover_bg                = ${miscHoverBG}
-preserve_1                            = ${preserve1}
-`
 
 function updateVals() {
   mainFG = document.getElementById("mainFG").value.substring(1);
@@ -47,6 +26,25 @@ function updateVals() {
   miscBG = document.getElementById("miscBG").value.substring(1);
   miscHoverBG = document.getElementById("miscHoverBG").value.substring(1);
   preserve1 = document.getElementById("preserve1").value.substring(1);
+  // I am just using a color.ini from a theme I like
+  iniFile = `[Base]
+  ; Shadow Style
+  main_fg                               = ${mainFG}
+  secondary_fg                          = ${secondaryFG}
+  main_bg                               = ${mainBG}
+  sidebar_and_player_bg                 = ${sidebarPlayerBG}
+  cover_overlay_and_shadow              = ${coverOverlayShadow}
+  indicator_fg_and_button_bg            = ${indicatorFGButtonBG}
+  pressing_fg                           = ${pressingFG}
+  slider_bg                             = ${sliderBG}
+  sidebar_indicator_and_hover_button_bg = ${sidebarIndicatorHoverButtonBG}
+  scrollbar_fg_and_selected_row_bg      = ${scrollbarFGSelectedRowBG}
+  pressing_button_fg                    = ${pressingButtonFG}
+  pressing_button_bg                    = ${pressingButtonBG}
+  selected_button                       = ${selectedButton}
+  miscellaneous_bg                      = ${miscBG}
+  Miscellaneous_hover_bg                = ${miscHoverBG}
+  preserve_1                            = ${preserve1}`;
 }
 updateVals();
 

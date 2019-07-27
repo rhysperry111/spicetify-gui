@@ -9,16 +9,76 @@
 
 <body onclick="updateVals()">
   <h1>Spicetify GUI</h1>
-  <div class="holder">
-    <p>Primary Text</p>
-    <input type="color" value="#eeeeee" class="selector" id="PrimaryText">
-  </div>
-  <div class="holder">
-    <p>Primary Background</p>
-    <input type="color" value="#333333" class="selector" id="PrimaryBackground">
-  </div>
-  <div class="holder">
-    <input type="button" value="Generate color.ini" onclick="downloadINI()">
+
+  <div id="main">
+    <div class="holder">
+      <p>Main Foreground</p>
+      <input type="color" value="#D0193E" class="selector" id="mainFG">
+    </div>
+    <div class="holder">
+      <p>Secondary Foreground</p>
+      <input type="color" value="#DEDEDE" class="selector" id="secondaryFG">
+    </div>
+    <div class="holder">
+      <p>Main Background</p>
+      <input type="color" value="#040035" class="selector" id="mainBG">
+    </div>
+    <div class="holder">
+      <p>Sidebar/Player Background</p>
+      <input type="color" value="#040035" class="selector" id="sidebarPlayerBG">
+    </div>
+    <div class="holder">
+      <p>Cover Overlay/Shadow</p>
+      <input type="color" value="#000000" class="selector" id="coverOverlayShadow">
+    </div>
+    <div class="holder">
+      <p>Indicator Foregound/Button Background</p>
+      <input type="color" value="#DA4C69" class="selector" id="indicatorFGButtonBG">
+    </div>
+    <div class="holder">
+      <p>Pressing Foreground</p>
+      <input type="color" value="#FF5C86" class="selector" id="pressingFG">
+    </div>
+    <div class="holder">
+      <p>Slider Background</p>
+      <input type="color" value="#3F3C45" class="selector" id="sliderBG">
+    </div>
+    <div class="holder">
+      <p>Sidebar Indicator/Hover Button Background</p>
+      <input type="color" value="#CB0029" class="selector" id="sidebarIndicatorHoverButtonBG">
+    </div>
+    <div class="holder">
+      <p>Scrollbar Foreground/Selected Row Background</p>
+      <input type="color" value="#370043" class="selector" id="scrollbarFGSelectedRowBG">
+    </div>
+    <div class="holder">
+      <p>Pressing Button Foreground</p>
+      <input type="color" value="#DEDEDE" class="selector" id="pressingButtonFG">
+    </div>
+    <div class="holder">
+      <p>Pressing Button Background</p>
+      <input type="color" value="#19194F" class="selector" id="pressingButtonBG">
+    </div>
+    <div class="holder">
+      <p>Selected Button</p>
+      <input type="color" value="#370043" class="selector" id="selectedButton">
+    </div>
+    <div class="holder">
+      <p>Miscellaneous Background</p>
+      <input type="color" value="#3F3C45" class="selector" id="miscBG">
+    </div>
+    <div class="holder">
+      <p>Miscellaneous Hover Background</p>
+      <input type="color" value="#1D1949" class="selector" id="miscHoverBG">
+    </div>
+    <div class="holder">
+      <p>Preserve 1</p>
+      <input type="color" value="#DEDEDE" class="selector" id="preserve1">
+    </div>
+
+    <div class="holder">
+      <input type="button" value="Generate color.ini" onclick="downloadINI()">
+    </div>
   </div>
   <script src="js/master.js"></script>
 </body>
