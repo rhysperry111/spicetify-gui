@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Spicetify GUI</title>
+  <title>Spicetify Configurator</title>
   <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body onclick="updateVals()">
-  <h1>Spicetify GUI</h1>
+  <h1>Spicetify Configurator</h1>
 
   <div id="main">
     <div class="holder">
@@ -76,8 +76,8 @@
       <input type="color" value="#DEDEDE" class="selector" id="preserve1">
     </div>
 
-    <div class="holder">
-      <input type="button" value="Generate color.ini" onclick="downloadINI()">
+    <div class="button-holder">
+      <input type="button" value="Generate Theme" id="thebutton" onclick="downloadINI()">
     </div>
   </div>
   <script src="js/master.js"></script>
