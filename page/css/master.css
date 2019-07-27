@@ -1,10 +1,62 @@
 /* I am sooooo sorry for the mess of sizes and units. I can't be bothered to make it responsive at this moment */
-
+/* All entries are in the same order they apear in the HTML */
 @font-face {
   font-family: myMono;
   src: url(fonts/SourceCodePro.ttf);
 }
+
 @font-face {
   font-family: mySans;
   src: url(fonts/NotoSans.ttf);
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  width: auto;
+  color: #333;
+  background-color: #eee;
+  padding: 20px 30px;
+  font-family: mySans;
+  font-size: 20px;
+}
+
+#main {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #eee;
+  background-color: #333;
+  text-align: center;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-colums: auto;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.item-text {}
+
+.selector-holder {}
+
+.selector {}
+
+.grid-item-wider {
+  grid-column: 1 / 5;
+}
+
+#thebutton {}
