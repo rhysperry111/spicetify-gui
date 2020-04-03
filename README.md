@@ -1,3 +1,7 @@
+THIS IS NOT BEING DEVELOPED ANYMORE
+
+
+
 # spicetify-gui
 Wrapper and configurator for spicetify-cli
 
